@@ -1,0 +1,4 @@
+test:
+  override:
+    - go version
+    - go run ./go/main.go
