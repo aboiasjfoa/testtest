@@ -2,7 +2,7 @@ language: go
 go:
   - tip
 before_script:
-  - sh ./ready_go.sh
+  - source ./ready_go.sh
 script:
-  - sh ./test_go.sh
+  - source ./test_go.sh
   - go test -v ./go/...

@@ -2,6 +2,6 @@
 
 test:
   pre:
-    - sh ./ready_go.sh
+    - source ./ready_go.sh
   override:
-    - sh ./test_go.sh
+    - source ./test_go.sh
