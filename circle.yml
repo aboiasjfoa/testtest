@@ -1,4 +1,3 @@
 test:
   override:
-    - go version
-    - go run ./go/main.go
+    - ./start_go.sh
