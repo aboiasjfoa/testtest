@@ -1,3 +1,7 @@
+
+
 test:
+  pre:
+    - sh ./ready_go.sh
   override:
-    - sh ./start_go.sh
+    - sh ./test_go.sh
