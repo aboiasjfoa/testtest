@@ -4,4 +4,5 @@ go:
 before_script:
   - sh ./ready_go.sh
 script:
-  - sh ./test_go.sh
+  # - sh ./test_go.sh
+  - go test -v ./go/...
