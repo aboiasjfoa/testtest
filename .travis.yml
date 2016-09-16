@@ -2,4 +2,4 @@ language: go
 go:
   - tip
 script:
-  - ./start_go.sh
+  - sh ./start_go.sh
