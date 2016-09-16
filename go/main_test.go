@@ -7,7 +7,7 @@ func TestSum(t *testing.T) {
 		t.Error("sum error")
 	}
 
-	if sum(2,4) != 5 { //わざと間違える
+	if sum(2,4) != 6 { //わざと間違える
 		t.Error("sum error 2")
 	}
 }

@@ -5,4 +5,3 @@ before_script:
   - source ./ready_go.sh
 script:
   - source ./test_go.sh
-  - go test -v ./go/...
