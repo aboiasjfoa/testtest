@@ -1,0 +1,7 @@
+language: go
+go:
+  - tip
+before_script:
+  - source ./ready_go.sh
+script:
+  - source ./test_go.sh
