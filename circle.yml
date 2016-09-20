@@ -3,6 +3,6 @@
 test:
   pre:
     - source ./ready_go.sh
-    - echo ${$CIRCLE_BRANCH}
+    - echo ${CIRCLE_BRANCH}
   override:
     - source ./test_go.sh
