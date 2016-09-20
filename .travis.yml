@@ -3,5 +3,6 @@ go:
   - tip
 before_script:
   - source ./ready_go.sh
+  - echo ${TRAVIS_BRANCH}
 script:
   - source ./test_go.sh
