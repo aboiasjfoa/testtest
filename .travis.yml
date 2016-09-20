@@ -2,7 +2,7 @@ language: go
 go:
   - tip
 before_script:
-  - source ./ready_go.sh
+  - if [ "${TRAVIS_BRANCH}" = "gobranch" ]; then source ./ready_go.sh;fi
   - echo ${TRAVIS_BRANCH}
 script:
-  - source ./test_go.sh
+  - if [ "${TRAVIS_BRANCH}" = "gobranch" ]; then source ./test_go.sh;fi

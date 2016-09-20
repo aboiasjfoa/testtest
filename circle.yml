@@ -2,7 +2,7 @@
 
 test:
   pre:
-    - source ./ready_go.sh
+    - if [ "${CIRCLE_BRANCH}" = "gobranch" ]; then source ./ready_go.sh;fi
     - echo ${CIRCLE_BRANCH}
   override:
-    - source ./test_go.sh
+    - if [ "${CIRCLE_BRANCH}" = "gobranch" ]; then source ./test_go.sh;fi
