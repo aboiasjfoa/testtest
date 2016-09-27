@@ -2,7 +2,7 @@ machine:
   timezone:
     Asia/Tokyo
   environment:
-    GOPATH: ~/go
+    GOPATH: $HOME/go
   pre:
     - >
       curl -fsSL "https://golang.org/dl/go1.7.1.linux-amd64.tar.gz" -o golang.tar.gz &&
