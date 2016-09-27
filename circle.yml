@@ -14,5 +14,6 @@ test:
   pre:
     - if [ "${CIRCLE_BRANCH}" = "gobranch" ]; then source ./ready_go.sh;fi
     - echo ${CIRCLE_BRANCH}
+    - pwd
   override:
     - if [ "${CIRCLE_BRANCH}" = "gobranch" ]; then source ./test_go.sh;fi
