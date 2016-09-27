@@ -4,12 +4,12 @@ machine:
   environment:
     GOLANG_VERSION: 1.7.1
     GOPATH: ~/go
-  post:
-    -
-    curl -fsSL "https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz" -o golang.tar.gz &&
-    sudo tar -C /usr/local -xzf golang.tar.gz &&
-    rm golang.tar.gz &&
-    mkdir -p $GOPATH
+  pre:
+    - >
+      curl -fsSL "https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz" -o golang.tar.gz &&
+      sudo tar -C /usr/local -xzf golang.tar.gz &&
+      rm golang.tar.gz &&
+      mkdir -p $GOPATH
     - export PATH=$PATH:/usr/local/go/bin
 
 test:
