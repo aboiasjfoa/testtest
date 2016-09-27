@@ -8,7 +8,7 @@ machine:
       curl -fsSL "https://golang.org/dl/go1.7.1.linux-amd64.tar.gz" -o golang.tar.gz &&
       sudo tar -C /usr/local -xzf golang.tar.gz &&
       rm golang.tar.gz &&
-      mkdir -p $GOPATH
+      mkdir -p "${GOPATH}"
     - export PATH=$PATH:/usr/local/go/bin
 
 test:
