@@ -6,7 +6,7 @@ machine:
     GOPATH: ~/go
   pre:
     - >
-      curl -fsSL "https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz" -o golang.tar.gz &&
+      curl -fsSL "https://golang.org/dl/go${GOLANG_VERSION}.linux-amd64.tar.gz" -o golang.tar.gz &&
       sudo tar -C /usr/local -xzf golang.tar.gz &&
       rm golang.tar.gz &&
       mkdir -p $GOPATH
